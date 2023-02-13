@@ -7,15 +7,24 @@ function checkEvenOdd( int $number )
 {
 
     if ( $number % 2 == 0 ) {
-        echo "{$number} is an even number";
+        return "{$number} is an even number";
     } else {
-        echo "{$number} is an odd number";
+        return "{$number} is an odd number";
     }
 
 }
 
-checkEvenOdd( 12 );
+$res = checkEvenOdd( 12 );
+echo $res;
+echo PHP_EOL;
 
 /*
 2. 1+2+3...…….100  Write a loop to calculate the summation of the series
  */
+$result = 0;
+
+for ( $i = 1; $i <= 100; $i++ ) {
+    $result += $i;
+}
+
+echo $result;

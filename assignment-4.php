@@ -50,3 +50,21 @@ function removeFirstLastElement( $arr )
 }
 
 print_r( removeFirstLastElement( $initialArr ) );
+
+/*
+4.Write a PHP function to check if a string contains only letters and whitespace.
+ */
+
+/*
+5.Write a PHP function to find the second largest number in an array of numbers.
+ */
+
+$nums = [5, 10, 50, 45, 87, 100, 98, 4, 15];
+
+function findSecondLargestNum( $nums )
+{
+    rsort( $nums );
+    return $nums[1];
+}
+
+echo findSecondLargestNum( $nums );

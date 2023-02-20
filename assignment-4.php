@@ -55,6 +55,22 @@ print_r( removeFirstLastElement( $initialArr ) );
 4.Write a PHP function to check if a string contains only letters and whitespace.
  */
 
+$strNew = "Hello World";
+
+function isStringContainsLetterWhiteSpace( $str )
+{
+
+    if ( !preg_match( "/^[a-zA-Z\s]+$/", $str ) ) {
+        return false;
+    } else {
+        return true;
+    }
+
+}
+
+$res = isStringContainsLetterWhiteSpace( $strNew );
+var_dump( $res );
+
 /*
 5.Write a PHP function to find the second largest number in an array of numbers.
  */
